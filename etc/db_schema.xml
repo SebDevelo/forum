@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+	<table name="develo_forum_post" resource="default" engine="innodb" comment="develo_forum_post Table">
+		<column xsi:type="smallint" name="post_id" padding="6" unsigned="true" nullable="false" identity="true" comment="Entity Id"/>
+		<constraint xsi:type="primary" referenceId="PRIMARY">
+			<column name="post_id"/>
+		</constraint>
+		<column name="post_title" nullable="true" xsi:type="text" comment="post_title"/>
+	</table>
+</schema>

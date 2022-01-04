@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Develo::top_level" title="Develo" module="Develo_Forum" sortOrder="9999" resource="Magento_Backend::content"/>
+		<add id="Develo_Forum::develo_forum_post" title="post" module="Develo_Forum" sortOrder="9999" resource="Magento_Backend::content" parent="Develo::top_level" action="develo_forum/post/index"/>
+	</menu>
+</config>
