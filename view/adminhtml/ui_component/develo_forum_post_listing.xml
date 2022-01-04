@@ -79,7 +79,7 @@
 		<column name="post_title">
 			<settings>
 				<filter>text</filter>
-				<label translate="true">post_title</label>
+				<label translate="true">Title</label>
 				<editor>
 					<editorType>text</editorType>
 					<validation>
@@ -87,6 +87,27 @@
 					</validation>
 				</editor>
 			</settings>
+		</column>
+		<column name="post_body">
+			<settings>
+				<filter>text</filter>
+				<label translate="true">Body</label>
+				<editor>
+					<editorType>text</editorType>
+					<validation>
+						<rule name="required-entry" xsi:type="boolean">false</rule>
+					</validation>
+				</editor>
+			</settings>
+		</column>
+		<column name="post_color_show" class="Develo\Forum\Ui\Component\Listing\Column\ColorShow">
+			<argument name="data" xsi:type="array">
+				<item name="config" xsi:type="array">
+					<item name="bodyTmpl" xsi:type="string">ui/grid/cells/html</item>
+					<item name="label" xsi:type="string" translate="true">Color</item>
+					<item name="sortOrder" xsi:type="number">30</item>
+				</item>
+			</argument>
 		</column>
 		<actionsColumn name="actions" class="Develo\Forum\Ui\Component\Listing\Column\PostActions">
 			<settings>
@@ -97,3 +118,4 @@
 		</actionsColumn>
 	</columns>
 </listing>
+

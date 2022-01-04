@@ -5,6 +5,8 @@
 		<constraint xsi:type="primary" referenceId="PRIMARY">
 			<column name="post_id"/>
 		</constraint>
-		<column name="post_title" nullable="true" xsi:type="text" comment="post_title"/>
+		<column name="post_title" nullable="true" xsi:type="text" comment="post title"/>
+		<column name="post_body" nullable="true" xsi:type="text" comment="post body"/>
+		<column name="post_hex" nullable="true" xsi:type="text" comment="post hex color"/>
 	</table>
 </schema>
